@@ -1,0 +1,630 @@
+(base)
+p-aangel@P-AANGEL MINGW64 ~
+$ cd Documents
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents
+$ cd Proyecto_Git
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/p-aangel/Documents/Proyecto_Git/.git/
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   archivo1.txt
+        new file:   archivo2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo2.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ code .
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   archivo1.txt
+        new file:   archivo2.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$  git commit -m "Commit inicial"
+[master (root-commit) 4322c1f] Commit inicial
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 archivo1.txt
+ create mode 100644 archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ gita add archivo2.txt
+bash: gita: command not found
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ ^C
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   archivo2.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git commit
+[master b5be479] Agregando un chanchito feliz
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ ls
+archivo1.txt  archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ rm archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git commit -m "eliminando archivo2"
+[master a2d05fc] eliminando archivo2
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ ls
+archivo1.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git rm archivo1.txt
+rm 'archivo1.txt'
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    archivo1.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git restore --staged archivo1.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ ls
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git restore archivo1.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ ls
+archivo1.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ ls
+archivo1.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ mv archivo1.txt archivo.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ ls
+archivo.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        archivo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add archivo1.txt archivo.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    archivo1.txt -> archivo.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git commit -m "renombrando archivo"
+[master 6016280] renombrando archivo
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename archivo1.txt => archivo.txt (100%)
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git mv archivo.txt archivo1.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    archivo.txt -> archivo1.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git commit -m "DEvolviendo el nombre del archivo"
+[master c86984b] DEvolviendo el nombre del archivo
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename archivo.txt => archivo1.txt (100%)
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add .gitignore
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git commit -m "agrgando archivo gitignore"
+[master 61acd2a] agrgando archivo gitignore
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        archivo2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status -s
+ M archivo1.txt
+?? archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add archivo1.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status -s
+M  archivo1.txt
+?? archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status -s
+M  archivo1.txt
+A  archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git commit -m "mostrando estatus corto"
+[master 826a8e1] mostrando estatus corto
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git diff
+diff --git a/archivo2.txt b/archivo2.txt
+index a33b8a3..b633624 100644
+--- a/archivo2.txt
++++ b/archivo2.txt
+@@ -1 +1,3 @@
+-chancho feliz
+\ No newline at end of file
++chancho feliz
++chancho triste
++Felipe
+\ No newline at end of file
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git diff
+diff --git a/archivo2.txt b/archivo2.txt
+index a33b8a3..b633624 100644
+--- a/archivo2.txt
++++ b/archivo2.txt
+@@ -1 +1,3 @@
+-chancho feliz
+\ No newline at end of file
++chancho feliz
++chancho triste
++Felipe
+\ No newline at end of file
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git add archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   archivo2.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git diff
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git diff --staged
+diff --git a/archivo2.txt b/archivo2.txt
+index a33b8a3..b633624 100644
+--- a/archivo2.txt
++++ b/archivo2.txt
+@@ -1 +1,3 @@
+-chancho feliz
+\ No newline at end of file
++chancho feliz
++chancho triste
++Felipe
+\ No newline at end of file
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   archivo2.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git log
+commit 826a8e17deda92daabc8bd3d3f84c7995c7f0b9b (HEAD -> master)
+Author: Antonio Ángel Abellán <p-aangel@neoris.com>
+Date:   Thu May 5 16:54:53 2022 +0200
+
+    mostrando estatus corto
+
+commit 61acd2a283d91592fe5af745f62a138c9bc654f8
+Author: Antonio Ángel Abellán <p-aangel@neoris.com>
+Date:   Thu May 5 16:34:34 2022 +0200
+
+    agrgando archivo gitignore
+
+commit c86984bce7ee3a4845f84618b00b88b9ac287b63
+Author: Antonio Ángel Abellán <p-aangel@neoris.com>
+Date:   Thu May 5 15:51:38 2022 +0200
+
+    DEvolviendo el nombre del archivo
+
+commit 601628095119bd3ca9fc27532a19df2be5c213e4
+Author: Antonio Ángel Abellán <p-aangel@neoris.com>
+Date:   Thu May 5 15:50:08 2022 +0200
+
+    renombrando archivo
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   archivo2.txt
+
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git restore --staged archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git restore archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git branch
+* master
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git checkout -b 'ramab'
+Switched to a new branch 'ramab'
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramab)
+$ git branch
+  master
+* ramab
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramab)
+$ git status
+On branch ramab
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramab)
+$ git add archivo2.txt
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramab)
+$ git commit -m "actualizando archivo 2"
+[ramab f2d7969] actualizando archivo 2
+ Committer: Antonio Ángel Abellán <p-aangel@neoris.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramab)
+$ git log --oneline
+f2d7969 (HEAD -> ramab) actualizando archivo 2
+826a8e1 (master) mostrando estatus corto
+61acd2a agrgando archivo gitignore
+c86984b DEvolviendo el nombre del archivo
+6016280 renombrando archivo
+a2d05fc eliminando archivo2
+b5be479 Agregando un chanchito feliz
+4322c1f Commit inicial
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramab)
+$ cat archivo2.txt
+chancho feliz
+chanchito feliz
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramab)
+$ git checkout master
+Switched to branch 'master'
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ cat archivo2.txt
+chancho feliz(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git merge ramab
+Updating 826a8e1..f2d7969
+Fast-forward
+ archivo2.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ cat archivo2.txt
+chancho feliz
+chanchito feliz
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git remote add origin https://github.com/Antog121/Pruebas_GIT.git
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git push -u origin master
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (20/20), 1.84 KiB | 626.00 KiB/s, done.
+Total 20 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/Antog121/Pruebas_GIT.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (master)
+$ git checkout -b ramaC
+Switched to a new branch 'ramaC'
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramaC)
+$ git push -u origin ramaC
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ramaC' on GitHub by visiting:
+remote:      https://github.com/Antog121/Pruebas_GIT/pull/new/ramaC
+remote:
+To https://github.com/Antog121/Pruebas_GIT.git
+ * [new branch]      ramaC -> ramaC
+branch 'ramaC' set up to track 'origin/ramaC'.
+(base)
+p-aangel@P-AANGEL MINGW64 ~/Documents/Proyecto_Git (ramaC)
+$
